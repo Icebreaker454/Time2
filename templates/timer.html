@@ -1,0 +1,26 @@
+{% extends "__base.html" %}
+
+{% block content %}
+<div class="row" id="content">
+  <div class="col-sm-8">
+    <h2>What are you working on?</h2>
+    <p>
+      <form class="form form-horizontal" action="index.html" method="post">
+        <input type="text" class="form-control" name="workitem" value="">
+      </form>
+    </p>
+  </div>
+  <div class="col-sm-4">
+    <button type="button" name="button" class="btn start-button">
+      Start
+    </button>
+    <p>
+      <p class="timer text-center">
+        00:00
+      </p>
+    </p>
+  </div>
+</div>
+
+<hr>
+{% end %}
